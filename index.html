@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Dhoni Tribute Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MS Dhoni - Tribute Page</h1>
+    </header>
+    <main>
+        <section id="tribute-info">
+            <div class="image-container">
+                <img src="msd.jpg" alt="MS Dhoni" width="150">
+            </div>
+            <h2>Who is MS Dhoni?</h2>
+            <p>MS Dhoni is a former Indian international cricketer and captain of the Indian national team. He is widely regarded as one of the greatest wicket-keeper batsmen and captains in the history of cricket.</p>
+            <p>Click the button below to learn more about his achievements.</p>
+            <button onclick="showAchievements()">Show Achievements</button>
+            <ul id="achievements-list" style="display: none;">
+                <li>Led India to victory in the 2007 ICC World Twenty20</li>
+                <li>Captained India to win the 2011 ICC Cricket World Cup</li>
+                <li>Won the 2013 ICC Champions Trophy</li>
+                <li>Recipient of the Padma Bhushan award in 2018</li>
+                <li>Played over 350 matches for India in all formats</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Created by Your Name &copy; 2024</p>
+    </footer>
+    <script>
+        function showAchievements() {
+    var achievementsList = document.getElementById('achievements-list');
+    if (achievementsList.style.display === 'none') {
+        achievementsList.style.display = 'block';
+    } else {
+        achievementsList.style.display = 'none';
+    }
+}
+
+    </script>
+</body>
+</html>
